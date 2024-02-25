@@ -1,7 +1,11 @@
-﻿namespace CleanArchitecture.Domain
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace CleanArchitecture.Domain
 {
     using Common;
     using Microsoft.Extensions.DependencyInjection;
+
+    [ExcludeFromCodeCoverage]
     public static class DomainConfiguration
     {
         public static IServiceCollection AddDomain(this IServiceCollection services)
