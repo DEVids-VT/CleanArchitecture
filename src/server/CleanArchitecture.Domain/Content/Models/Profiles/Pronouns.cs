@@ -4,13 +4,15 @@
     using CleanArchitecture.Domain.Content.Exceptions;
     using System.Text.RegularExpressions;
     using static CleanArchitecture.Domain.Content.Models.ModelConstants.Pronouns;
+    using static System.Runtime.InteropServices.JavaScript.JSType;
+
     public class Pronouns : ValueObject
     {
         internal Pronouns(string pronouns)
         {
             this.Validate(pronouns);
 
-            if (!Regex.IsMatch(pronouns, PronounsRegularExpression))
+            if (!Regex.IsMatch(pronouns, PronounsRegularExpression, RegexOptions.None, TimeSpan.FromMilliseconds(500)))
             {
                 throw new InvalidPronounsException("Pronouns must be in the format 'text/text', where each 'text' consists only of letters (a-z, A-Z). For example, 'she/her', 'they/them', or 'he/him'.");
             }

@@ -11,7 +11,7 @@
         {
             this.Validate(number);
 
-            if (!Regex.IsMatch(number, PhoneNumberRegularExpression))
+            if (!Regex.IsMatch(number, PhoneNumberRegularExpression, RegexOptions.None, TimeSpan.FromMilliseconds(500)))
             {
                 throw new InvalidPhoneNumberException("Phone number must start with a '+' and contain only digits afterwards.");
             }
