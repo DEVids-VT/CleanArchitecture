@@ -1,8 +1,8 @@
-﻿using System.Collections.Concurrent;
-using System.Linq.Expressions;
-
-namespace CleanArchitecture.Domain.Common
+﻿namespace CleanArchitecture.Domain.Common
 {
+    using System.Collections.Concurrent;
+    using System.Linq.Expressions;
+
     public abstract class Specification<T>
     {
         private static readonly ConcurrentDictionary<string, Func<T, bool>> DelegateCache

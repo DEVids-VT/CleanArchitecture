@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.UnitTests
+﻿namespace CleanArchitecture.Domain.UnitTests.Tests.Common
 {
     using CleanArchitecture.Domain.UnitTests.Models.Specifications;
     using FluentAssertions;
@@ -39,7 +39,7 @@
         public void And_CombinesTrueAndFalseSpecifications_ReturnsFalse()
         {
             var spec1 = new TrueSpecification();
-            var spec2 = new TrueSpecification();
+            var spec2 = new FalseSpecification();
             var resultSpec = spec1.And(spec2);
 
             resultSpec.IsSatisfiedBy(new object()).Should().BeFalse();
@@ -66,7 +66,11 @@
             var spec2 = new FalseSpecification();
             var resultSpec = spec1.Or(spec2);
 
-            resultSpec.IsSatisfiedBy(new object()).Should().BeFalse();
+            var combinedExpression = spec1.And(spec2).ToExpression();
+            var compiled = combinedExpression.Compile();
+
+            var result = compiled(new object());
+            result.Should().BeFalse();
         }
 
 

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.UnitTests
+﻿namespace CleanArchitecture.Domain.UnitTests.Tests.Common
 {
     using CleanArchitecture.Domain.UnitTests.Models.ValueObjects;
     using FluentAssertions;
