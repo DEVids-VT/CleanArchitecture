@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Content.Exceptions
+﻿namespace CleanArchitecture.Domain.Recipes.Exceptions
 {
     using CleanArchitecture.Domain.Common;
     using System.Diagnostics.CodeAnalysis;

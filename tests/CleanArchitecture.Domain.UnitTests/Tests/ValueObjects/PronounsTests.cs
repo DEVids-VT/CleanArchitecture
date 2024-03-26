@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Domain.Content.Exceptions;
-using CleanArchitecture.Domain.Content.Models;
-using CleanArchitecture.Domain.Content.Models.Profiles;
+﻿using CleanArchitecture.Domain.Recipes.Exceptions;
+using CleanArchitecture.Domain.Recipes.Models;
+using CleanArchitecture.Domain.Recipes.Models.Authors;
 using FluentAssertions;
 
 namespace CleanArchitecture.Domain.UnitTests.Tests.ValueObjects

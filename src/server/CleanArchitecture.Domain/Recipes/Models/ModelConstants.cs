@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Content.Models
+﻿namespace CleanArchitecture.Domain.Recipes.Models
 {
     public class ModelConstants
     {
@@ -31,6 +31,23 @@
 
             public static readonly DateTime MinBirthDate = new DateTime(1900, 1, 1);
             public static readonly DateTime MaxBirthDate = DateTime.Now.AddYears(-18);
+        }
+
+        public class Ingredient
+        {
+            public const int MinNameLength = 3;
+            public const int MaxNameLength = 25;
+
+            public const decimal MinQuantity = 0;
+            public const decimal MaxQuantity = 9999;
+        }
+        public class Step
+        {
+            public const int MinDescLength = 10;
+            public const int MaxDescLength = 500;
+
+            public const decimal MinOrder = 1;
+            public const decimal MaxOrder = 999;
         }
     }
 }

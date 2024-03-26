@@ -1,6 +1,6 @@
 ﻿namespace CleanArchitecture.Domain.Common.Models
 {
-    using CleanArchitecture.Domain.Content.Models;
+    using CleanArchitecture.Domain.Recipes.Models;
 
     public class Guard
     {

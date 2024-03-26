@@ -1,11 +1,11 @@
 ﻿using System.Runtime.CompilerServices;
-using CleanArchitecture.Domain.Content.Exceptions;
 
 [assembly: InternalsVisibleTo("CleanArchitecture.Domain.UnitTests")]
-namespace CleanArchitecture.Domain.Content.Models.Profiles
+namespace CleanArchitecture.Domain.Recipes.Models.Authors
 {
     using CleanArchitecture.Domain.Common;
     using CleanArchitecture.Domain.Common.Models;
+    using CleanArchitecture.Domain.Recipes.Exceptions;
     using static ModelConstants.Profile;
 
     internal class Profile : Entity<Guid>, IAggregateRoot

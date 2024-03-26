@@ -1,9 +1,9 @@
-﻿namespace CleanArchitecture.Domain.Content.Models.Profiles
+﻿namespace CleanArchitecture.Domain.Recipes.Models.Authors
 {
     using CleanArchitecture.Domain.Common.Models;
-    using CleanArchitecture.Domain.Content.Exceptions;
+    using CleanArchitecture.Domain.Recipes.Exceptions;
     using System.Text.RegularExpressions;
-    using static CleanArchitecture.Domain.Content.Models.ModelConstants.Pronouns;
+    using static CleanArchitecture.Domain.Recipes.Models.ModelConstants.Pronouns;
     using static System.Runtime.InteropServices.JavaScript.JSType;
 
     public class Pronouns : ValueObject

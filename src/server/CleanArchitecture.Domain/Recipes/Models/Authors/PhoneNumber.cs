@@ -1,9 +1,9 @@
-﻿namespace CleanArchitecture.Domain.Content.Models.Profiles
+﻿namespace CleanArchitecture.Domain.Recipes.Models.Authors
 {
     using CleanArchitecture.Domain.Common.Models;
     using System.Text.RegularExpressions;
     using static ModelConstants.PhoneNumber;
-    using CleanArchitecture.Domain.Content.Exceptions;
+    using CleanArchitecture.Domain.Recipes.Exceptions;
 
     public class PhoneNumber : ValueObject
     {

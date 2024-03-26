@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CleanArchitecture.Domain.Common.Models;
-using CleanArchitecture.Domain.Content.Models;
+using CleanArchitecture.Domain.Recipes.Models;
 using CleanArchitecture.Domain.UnitTests.Models.Exceptions;
 using FluentAssertions;
 
