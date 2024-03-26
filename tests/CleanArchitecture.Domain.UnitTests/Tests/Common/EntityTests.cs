@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.UnitTests
+﻿namespace CleanArchitecture.Domain.UnitTests.Tests.Common
 {
     using CleanArchitecture.Domain.Common;
     using CleanArchitecture.Domain.UnitTests.Helpers;
@@ -112,6 +112,6 @@
             // Act & Assert
             entity.Equals(differentObject).Should().BeFalse();
         }
-       
+
     }
 }

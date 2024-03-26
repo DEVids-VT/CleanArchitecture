@@ -1,7 +1,7 @@
-﻿using System.Reflection;
-
-namespace CleanArchitecture.Domain.Common.Models
+﻿namespace CleanArchitecture.Domain.Common.Models
 {
+    using System.Reflection;
+
     public abstract class ValueObject
     {
         private readonly BindingFlags privateBindingFlags =
